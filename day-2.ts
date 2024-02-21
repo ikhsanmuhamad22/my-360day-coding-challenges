@@ -30,6 +30,7 @@ console.log(fixTheMeerkat(['tail', 'body', 'head']));
 // return the D between A, B, C, D
 const alphabet = (ns: number[]) => {
   ns.sort((a, b) => a - b);
+  console.log(ns);
   let a = ns[0];
   let b = ns[1];
   let AxB = a * b;
