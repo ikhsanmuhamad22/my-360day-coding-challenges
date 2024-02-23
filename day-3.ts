@@ -11,11 +11,3 @@ const hero = (bullets: number, dragons: number) =>
   bullets / dragons >= 2 ? true : false;
 
 console.log(hero(10, 5));
-
-// Remove the minimum
-const removeSmallest = (numbers) =>
-  numbers.filter(
-    (n: number, i: number) => i !== numbers.indexOf(Math.min(...numbers))
-  );
-
-console.log(removeSmallest([5, 3, 2, 1, 4]));

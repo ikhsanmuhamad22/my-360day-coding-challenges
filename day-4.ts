@@ -31,3 +31,11 @@ console.log(
     [7, 10],
   ])
 );
+
+// Remove the minimum
+const removeTheSmallest = (numbers: number[]) => {
+  const min = Math.min(...numbers);
+  return numbers.filter((v) => v !== min);
+};
+
+console.log(removeTheSmallest([5, 3, 2, 1, 4]));
