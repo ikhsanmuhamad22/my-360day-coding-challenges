@@ -34,8 +34,7 @@ console.log(
 
 // Remove the minimum
 const removeTheSmallest = (numbers: number[]) => {
-  const min = Math.min(...numbers);
-  return numbers.filter((v) => v !== min);
+  return numbers.filter((v, i) => i !== numbers.indexOf(Math.min(...numbers)));
 };
 
-console.log(removeTheSmallest([5, 3, 2, 1, 4]));
+console.log(removeTheSmallest([2, 2, 1, 2, 1]));
