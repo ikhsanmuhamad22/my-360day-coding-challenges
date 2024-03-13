@@ -36,6 +36,7 @@ function lonelyinteger(a) {
 }
 console.log(lonelyinteger([4, 9, 95, 93, 57, 4, 57, 93, 9]));
 
+
 // Diagonal Different
 function diagonalDifference(arr) {
   let diag1 = 0;
